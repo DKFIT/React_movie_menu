@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState} from "react";
 import searchProduct from "../services/productService";
+
 import { Modal, Button } from "react-bootstrap";
 
 const SearchProduct = ({ setResults }) => {
@@ -7,10 +8,11 @@ const SearchProduct = ({ setResults }) => {
   const [error, setError] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [formError, setFormError] = useState("");
-
+// Uzsetinu paieskos zodi I state
   const handleChange = (searchWord) => {
     setSearchWord(searchWord);
   };
+  
 
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevents page from reloading
@@ -18,6 +20,7 @@ const SearchProduct = ({ setResults }) => {
       setFormError("Search field cannot be empty.");
       setShowModal(true);
     } else {
+      
       searchProduct(searchWord).then((res) => {
         if (res.Response === "False") {
           setResults([]);
