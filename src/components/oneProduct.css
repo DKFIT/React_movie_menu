@@ -1,7 +1,42 @@
-img{
-    height: auto;  width: auto;
+
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.container img {
+  height: 800px;
+  width: auto;
+}
+
+h1 {
+  height: 96px;
+}
+h3 {
+  height: 36px;
 }
 .card {
-height: auto;  width: 500px;
-background-color: rgba(245, 245, 220, 0.493);
+  height: auto;
+  width: 500px;
+  background-color: rgba(245, 245, 220, 0.493);
+}
+
+.clickmore {
+  /* background-color: black; */
+}
+.modal-dialog {
+  width: 100%;
+  height: 100px;
+}
+
+.modalImg {
+  display: flex;
+  flex-direction: row;
+}
+.modalbody img {
+  height: 800px;
+  width: 500px;
+}
+.modalinfo {
+    font-family: 'Lobster', cursive;
+
+  font-size: large;
+  gap: 10px;
 }
