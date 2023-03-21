@@ -44,7 +44,7 @@ const SearchProduct = ({ setResults }) => {
         <div className="input-group mb-3">
           <input
             type="text"
-            className=""
+            className="form-control rounded-pill h-100 m-1 "
             placeholder="Search"
             aria-label="Search"
             aria-describedby="button-search"
@@ -54,7 +54,7 @@ const SearchProduct = ({ setResults }) => {
 
         
           <button
-            className="btn btn-outline-light"
+            className="btn btn-light rounded-pill h-100 m-1"
             type="submit"
             id="button-search"
           >
@@ -78,3 +78,5 @@ const SearchProduct = ({ setResults }) => {
 };
 
 export default SearchProduct;
+
+

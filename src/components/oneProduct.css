@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-.container img {
+.container-fluid img {
   height: 800px;
   width: auto;
+}
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow cards to wrap to new lines */
 }
 
 h1 {
@@ -17,7 +21,10 @@ h3 {
   width: 500px;
   background-color: rgba(245, 245, 220, 0.493);
 }
-
+.card button {
+  width: auto;
+  border-style: none;
+}
 .clickmore {
   /* background-color: black; */
 }
@@ -35,8 +42,44 @@ h3 {
   width: 500px;
 }
 .modalinfo {
-    font-family: 'Lobster', cursive;
-
+  font-family: "Lobster", cursive;
   font-size: large;
   gap: 10px;
+}
+
+
+
+@media (max-width: 425px) {
+  .modalImg {
+    max-width: 100%;
+    max-height: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 500px;
+  }
+  .modalImg {
+    max-width: 100%;
+    max-height: 75%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    max-width: 700px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    max-width: 900px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .card {
+    max-width: 1000px;
+  }
 }

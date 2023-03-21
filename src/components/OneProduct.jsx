@@ -39,25 +39,25 @@ const OneProduct = (props) => {
   //
 
   return (
-    <div className="container d-flex flex-wrap justify-content-center">
+    <div className="container-fluid justify-content-center">
       {items?.map((item) => (
         <Card className="border border-5 border-dark m-4 " key={item.imdbID}>
           <h1 className="d-flex justify-content-center">{item.Title}</h1>
           <h3 className="d-flex justify-content-center">{item.Year}</h3>
           <img src={item.Poster} alt="" />
-          <button className="clickmore border border-5" onClick={() => handleClick(item)}>
+          <button className="clickmore w-100" onClick={() => handleClick(item)}>
            <h5>More details</h5>
           </button>
         </Card>
       ))}
       <Modal className="modal-xl" show={showModal} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{selectedItem?.Title}</Modal.Title>
+          <Modal.Title>{secondApiDetails.Title}</Modal.Title>
         </Modal.Header>
         <Modal.Body className="modalbody">
           <div className="d-flex row">
             <div className="col-6">
-              <img src={selectedItem?.Poster} alt="" />
+              <img className="modalImg" src={secondApiDetails.Poster} alt="" />
             </div>
             <div className="col-6 modalinfo">
               <h4 className="p-3">Title: {secondApiDetails.Title}</h4>
