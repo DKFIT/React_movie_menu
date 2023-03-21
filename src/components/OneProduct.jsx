@@ -39,7 +39,7 @@ const OneProduct = (props) => {
   //
 
   return (
-    <div className="container-fluid justify-content-center">
+    <div className="mt-5 container-fluid justify-content-center">
       {items?.map((item) => (
         <Card className="border border-5 border-dark m-4 " key={item.imdbID}>
           <h1 className="d-flex justify-content-center">{item.Title}</h1>

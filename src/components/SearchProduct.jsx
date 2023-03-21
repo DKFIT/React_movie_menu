@@ -43,8 +43,9 @@ const SearchProduct = ({ setResults }) => {
         <h1 className="Movienight">Movie Night</h1>
         <div className="input-group mb-3">
           <input
+          id="input"
             type="text"
-            className="form-control rounded-pill h-100 m-1 "
+            className="form-control rounded-pill m-1 "
             placeholder="Search"
             aria-label="Search"
             aria-describedby="button-search"
@@ -54,7 +55,8 @@ const SearchProduct = ({ setResults }) => {
 
         
           <button
-            className="btn btn-light rounded-pill h-100 m-1"
+          
+            className="btn btn-light rounded-pill m-1"
             type="submit"
             id="button-search"
           >
